@@ -16,17 +16,18 @@ function AddItemForm(props) {
       category: categoryValue
     }
     props.onAddItem(item);
+    alert("Item " + nameValue + " added to the list!");
   }
 
   return (
     <form onSubmit={formSubmitHandler}>
-      <label>Eseme nimi</label><br />
-      <input type="text" placeholder="Nimi" required ref={nameInputRef} /><br />
-      <label>Eseme hind</label><br />
-      <input type="number" placeholder="Hind"required ref={priceInputRef} /><br />
-      <label>Eseme kategooria</label><br />
-      <input type="text"placeholder="Kategooria" required ref={categoryInputRef} /><br />
-      <button>Sisesta uus ese</button>
+      <label><b>Item name</b></label><br />
+      <input type="text" placeholder="Name" required ref={nameInputRef} /><br />
+      <label><b>Item price</b></label><br />
+      <input type="number" placeholder="Price"required ref={priceInputRef} /><br />
+      <label><b>Item category</b></label><br />
+      <input type="text"placeholder="Category" required ref={categoryInputRef} /><br /><br />
+      <button><b>Add new item</b></button>
     </form>
   );
 }

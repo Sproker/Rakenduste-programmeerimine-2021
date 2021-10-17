@@ -1,5 +1,5 @@
-import {Link} from 'react-router-dom';
 import ItemList from '../components/ItemList';
+import './Pages.css';
 import {useState, useEffect} from 'react';
 
 function Home() {
@@ -18,17 +18,19 @@ function Home() {
 
     if (isLoading) {
         return (
-            <div>is loading</div>
+            <div>Page is loading</div>
         )
     }
 
     return (
         <div>
-            <Link to="add-item">
-                <button>Lisa uus ese</button><br />
-            </Link>
+            <br/><br/><br />
+            <div className={"AddedItems"}>
+            <h1>Added Item list</h1>
+            <hr />
             <br />
             <ItemList items={loadedItems}/>
+            </div>
             <br />
         </div>
     );

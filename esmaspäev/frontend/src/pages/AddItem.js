@@ -13,8 +13,13 @@ function AddItem() {
 
   return (
     <div>
-      <h1>Lisa uus ese</h1>
+      <br/><br/><br />
+      <div className = {"AddNewItem"}>
+      <h1>New Item</h1>
+      <hr/>
+      <br/>
       <AddItemForm onAddItem={itemSubmitHandler}/>
+      </div>
     </div>
     );
 }

@@ -1,5 +1,3 @@
-import {Link} from 'react-router-dom';
-import CategoryList from '../components/CategoryList'
 import { useState, useEffect } from 'react';
 
 
@@ -25,11 +23,6 @@ function Categories() {
 
     return (
         <div>
-            <Link to="add-category">
-                <button>Lisa Kategooria</button><br />
-            </Link>
-            <br />
-            <CategoryList categories={loadedCategories} />
         </div>
     )
 }

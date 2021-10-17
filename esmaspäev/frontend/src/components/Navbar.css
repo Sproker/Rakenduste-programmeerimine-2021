@@ -1,11 +1,17 @@
 .navbar {
-  background-color: crimson;
-  height: 150px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  background: #283747;
 }
 
-.cart {
-  height: 50px;
-  margin: 50px;
+.navbar__title {
+  margin-right: auto;
+  transform: scale(0.9);
+  font-size: 1px;
+}
+
+.navbar__item {
+  padding: 0px 35px;
+  transform: scale(1.1);
+  vertical-align: middle;
 }

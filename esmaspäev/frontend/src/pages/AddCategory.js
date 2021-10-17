@@ -15,8 +15,13 @@ function AddCategory(category) {
 
     return (
         <div>
-            <h1>Lisa uus kategooria</h1>
+            <br/><br/><br />
+            <div className = {"AddNewCategory"}>
+            <h1>New Category</h1>
+            <hr/>
+            <br/>
             <AddCategoryForm onAddCategory={categorySubmitHandler}/>
+            </div>
         </div>
     )
 }

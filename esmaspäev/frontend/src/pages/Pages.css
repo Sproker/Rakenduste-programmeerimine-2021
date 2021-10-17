@@ -1,0 +1,21 @@
+.AddedItems{
+    max-width: 30%;
+	padding: 10px 30px;
+	background: #E5E7E9;
+	margin: 10px auto;
+	padding: 20px;
+	border-radius: 9px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+}
+
+.UserCart{
+    max-width: 30%;
+	padding: 10px 30px;
+	background: #E5E7E9;
+	margin: 10px auto;
+	padding: 20px;
+	border-radius: 9px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+    text-align: center;
+}
