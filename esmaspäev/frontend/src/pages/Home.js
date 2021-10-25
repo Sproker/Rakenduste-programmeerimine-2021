@@ -18,7 +18,7 @@ function Home() {
 
     if (isLoading) {
         return (
-            <div>Page is loading</div>
+            <div>Page is loading...</div>
         )
     }
 
@@ -26,10 +26,10 @@ function Home() {
         <div>
             <br/><br/><br />
             <div className={"AddedItems"}>
-            <h1>Added Item list</h1>
+            <h1>Items for sale:</h1>
             <hr />
             <br />
-            <ItemList items={loadedItems}/>
+            <ItemList items={loadedItems} isAddToCart={true} />
             </div>
             <br />
         </div>

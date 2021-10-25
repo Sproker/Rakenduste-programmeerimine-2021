@@ -1,15 +1,24 @@
-import Item from '../components/Item';
+import Item from './Item';
 
 function ItemList(props) {
-  return(<div>
-    {props.items.map(item=> (
-     <Item 
-      key={item.id} 
-      name={item.name} 
+    function deleteItem(itemId) {
+      props.onDeleteItem(itemId);
+    }
+
+   return (
+    <div className="item-list">
+      {props.items.map(item => (
+      <Item
+      key={item.id}
+      id={item.id}
+      name={item.name}
       price={item.price}
-      category={item.category} />
-    ))}
-  </div>);
+      category={item.category}
+      isAddToCart={props.isAddToCart}
+      deleteItem={deleteItem}/>
+      ))}
+    </div>
+  );
 }
 
 export default ItemList;

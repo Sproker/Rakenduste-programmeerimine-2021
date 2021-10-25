@@ -7,6 +7,8 @@ function Navbar() {
     React.createElement("header", { className: "navbar" }, 
     React.createElement("div", { className: "navbar__title"},<Link to="/" style={{ textDecoration: 'none', color: 'white' }}><img className="logo" src="webshio.png" alt=""/> 
     </Link>),
+    React.createElement("div", { className: "navbar__item"},<Link to="admin" style={{ textDecoration: 'none', color: 'white' }}>Admin
+    </Link>), 
     React.createElement("div", { className: "navbar__item"},<Link to="add-item" style={{ textDecoration: 'none', color: 'white' }}>Item
     </Link>), 
     React.createElement("div", { className: "navbar__item"},<Link to="add-category" style={{ textDecoration: 'none', color: 'white' }}>Category</Link>), 
