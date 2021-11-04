@@ -1,0 +1,84 @@
+  .navbar {
+    display: flex;
+    align-items: center;
+    background: #283747;
+    height: 105px;
+  }
+  
+  .navbar__title {
+    margin-right: auto;
+    transform: scale(0.7);
+  }
+
+  .navbar__title::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #788999;
+    transition: width .3s;
+  }
+
+  .navbar__title:hover::after {
+    width: 100%;
+  }
+  
+  h1{
+    text-align: center;
+  }
+  
+  .home{
+    transform: scale(0.5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+
+  }
+  
+  .navbar__item {
+    padding: 0px 30px;
+    transform: scale(1.1);
+    vertical-align: middle;
+  }
+
+  .navbar__item::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #788999;
+    transition: width .3s;
+  }
+  
+  .navbar__item:hover::after {
+    width: 105%;
+  }
+  .ant-form{
+    background-color:white;
+  }
+  .ant-layout-content{
+    background-color:white;
+  }
+  
+  header.ant-layout-header{
+    height: 105px;
+    background: #283747;
+  }
+
+  footer.ant-layout-footer{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 8%;
+    background: #efefef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .userLogout Button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }

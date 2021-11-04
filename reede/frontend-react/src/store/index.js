@@ -1,31 +1,33 @@
-import { createContext, useReducer } from "react";
+import { createContext, useReducer, useEffect } from "react";
 import { postReducer, authReducer } from "./reducer";
-import combineReducers from "react-combine-reducers"
+import combineReducers from "react-combine-reducers";
 
-const initialPosts = {
-  data: []
+const initalPosts = {
+    data: []
+
 }
 
-const initialAuth = {
-  token: null,
-  user: null
+const initalAuth = {
+    token: null,
+    firstName: null,
+    lastName: null,
 }
 
 const [combinedReducer, initialState] = combineReducers({
-  posts: [postReducer, initialPosts],
-  auth: [authReducer, initialAuth]
+    posts: [postReducer, initalPosts],
+    auth: [authReducer, initalAuth]
 })
 
 export const Context = createContext(initialState)
 
-function Store({ children }){
-  const [state, dispatch] = useReducer(combinedReducer, initialState)
+function Store({children}){
+    const [state, dispatch] = useReducer(combinedReducer, initialState)
 
-  return (
-    <Context.Provider value={[ state, dispatch ]}>
-      { children }
-    </Context.Provider>
-  )
+    return (
+        <Context.Provider value={[ state, dispatch ]}>
+            {children}
+        </Context.Provider>
+    )
 }
 
 export default Store
